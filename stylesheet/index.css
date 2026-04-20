@@ -21,4 +21,38 @@
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+#navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+a {
+    padding: 15px;
+}
+
+a:hover {
+  background-color: lightgrey;
+  font-size: 18px;
+}
+
+main {
+    width: 800px;    
+    margin: 0 auto;   
+    background-color: #f0f0f0;
+    padding: 20px;     
+    box-sizing: border-box;   
+    }
+
+    p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
