@@ -1,0 +1,24 @@
+:root {
+    --blue: #277DF5;
+    --red: #F52727;
+    --green: #1E6E2D;
+    --yellow: #E1ED4A;
+    --light-blue: #4AE2ED;
+    --black: #000000;
+    --white: #FFFFFF;
+    --orange: #FF7700;
+    --brown: #8A4203;
+    --primary-background: #6D8A66;
+    --secondary-background: #B5927B;
+    --tertiary-background: #0096B0;
+    --primary-foreground: #F7F7F7;
+    --secondary-foreground: #000000;
+    --tertiary-foreground: #294D3A;
+}
+
+#header {
+  font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
