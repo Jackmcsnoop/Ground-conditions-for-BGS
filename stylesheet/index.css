@@ -243,3 +243,20 @@ nav input[type='checkbox']:checked ~ a {
         align-self: center;
     }
 }
+#r-overview,
+#a-overview,
+#q-overview,
+#i-overview,
+#resources,
+#agriculture,
+#quality,
+#impacts,
+#polutants,
+#building,
+#mining,
+#safety,
+#solutions,
+#r-dropdowns {
+    width: 98%;;
+    margin: 0 auto;
+}
