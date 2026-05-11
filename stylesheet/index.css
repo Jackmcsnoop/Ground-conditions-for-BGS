@@ -51,6 +51,7 @@ main {
     background-color: #f0f0f0;
     padding: 20px;
     box-sizing: border-box;
+    border-radius: 15px;
 }
 
 p {
@@ -193,7 +194,8 @@ nav input[type='checkbox']:checked ~ a {
     #scrollfollow {
         position: sticky;
         top: 0;
-        background-color: #f0f0f0;
+        background-color: #e6e6e6;
+        border-radius: 15px;
     }
 }
 
@@ -214,7 +216,26 @@ nav input[type='checkbox']:checked ~ a {
     h2 {
         font-size: 2rem;
     }
+    #scrollfollow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav{
+        border: none;
+    }
+    #nav-links{
+        display: none;
+        flex-direction: column;
+    }
+    nav input[type='checkbox']:checked ~ #nav-links {
+        display: flex;
+        padding: 2px;
+        border: solid;
+        width: 70%;
+    }
     nav label {
+        font-size: 2rem;
         text-align: right;
         display: block;
         padding: 0.5em;
