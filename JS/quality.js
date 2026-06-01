@@ -19,7 +19,7 @@ const overview=[
                     conubia nostra inceptos himenaeos.`
 ]
 
-building=`ipsum dolor sit amet consectetur adipiscing elit. Quisque
+const building=`ipsum dolor sit amet consectetur adipiscing elit. Quisque
             faucibus ex sapien vitae pellentesque sem placerat. In id cursus
             mi pretium tellus duis convallis. Tempus leo eu aenean sed diam
             urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum
@@ -27,7 +27,7 @@ building=`ipsum dolor sit amet consectetur adipiscing elit. Quisque
             posuere. Ut hendrerit semper vel class aptent taciti sociosqu.
             Ad litora torquent per conubia nostra inceptos himenaeos.`
 
-mining=`Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+const mining=`Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
             faucibus ex sapien vitae pellentesque sem placerat. In id cursus
             mi pretium tellus duis convallis. Tempus leo eu aenean sed diam
             urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum
@@ -35,11 +35,11 @@ mining=`Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
             posuere. Ut hendrerit semper vel class aptent taciti sociosqu.
             Ad litora torquent per conubia nostra inceptos himenaeos.`
 
-safety1=`Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit
+const safety1=`Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit
             amet consectetur adipiscing elit quisque faucibus ex.
             Adipiscing elit quisque faucibus ex sapien vitae
             pellentesque.`
-safety2=`Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit
+const safety2=`Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit
             amet consectetur adipiscing elit quisque faucibus ex.
             Adipiscing elit quisque faucibus ex sapien vitae
             pellentesque.`
