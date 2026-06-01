@@ -163,7 +163,13 @@ details:hover {
     width: 100%;
 }
 
-#safety {
+#safety-1 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    width: 100%;
+}
+
+#safety-2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     width: 100%;
@@ -254,7 +260,8 @@ nav input[type='checkbox']:checked ~ a {
 #polutants,
 #building,
 #mining,
-#safety,
+#safety-1,
+#safety-2,
 #solutions,
 #r-dropdowns {
     width: 98%;;
