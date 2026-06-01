@@ -31,22 +31,22 @@ const pages = ["Home", "Resources", "Agriculture", "Quality", "Impacts"];
 
 //Selecting locations for the information.
 
-const navlinks = document.querySelectorAll("#nav-links a");
-const overview_p = document.querySelectorAll("#a-overview p");
-const polutants_p = document.querySelector("#polutants p");
+const navLinks = document.querySelectorAll("#nav-links a");
+const overviewP = document.querySelectorAll("#a-overview p");
+const polutantsP = document.querySelector("#polutants p");
 
 //Writing the information to the page.
 
-polutants_p.textContent = polutants;
+polutantsP.textContent = polutants;
 
 //Looping for efficiency.
 
 let len1 = overview.length;
 for (let i = 0; i < len1; i++) {
-    overview_p[i].textContent = overview[i];
+    overviewP[i].textContent = overview[i];
 }
 
 let len2 = pages.length;
 for (let i = 0; i < len2; i++) {
-    navlinks[i].textContent = pages[i];
+    navLinks[i].textContent = pages[i];
 }

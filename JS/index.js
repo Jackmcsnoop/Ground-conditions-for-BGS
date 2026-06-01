@@ -39,21 +39,21 @@ const pages = ["Home", "Resources", "Agriculture", "Quality", "Impacts"];
 
 //Selecting locations for the information.
 
-const resources_p = document.querySelector("#resources p");
-const agriculture_p = document.querySelector("#agriculture p");
-const quality_p = document.querySelector("#quality p");
-const impacts_p = document.querySelector("#impacts p");
-const navlinks = document.querySelectorAll("#nav-links a");
+const resourcesP = document.querySelector("#resources p");
+const agricultureP = document.querySelector("#agriculture p");
+const qualityP = document.querySelector("#quality p");
+const impactsP = document.querySelector("#impacts p");
+const navLinks = document.querySelectorAll("#nav-links a");
 
 //Writing the information to the page.
 
-resources_p.textContent = resources;
-agriculture_p.textContent = agriculture;
-quality_p.textContent = quality;
-impacts_p.textContent = impacts;
+resourcesP.textContent = resources;
+agricultureP.textContent = agriculture;
+qualityP.textContent = quality;
+impactsP.textContent = impacts;
 
 //Looping for efficiency.
 let len = pages.length;
 for (let i = 0; i < len; i++) {
-    navlinks[i].textContent = pages[i];
+    navLinks[i].textContent = pages[i];
 }
