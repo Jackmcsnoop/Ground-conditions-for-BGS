@@ -57,3 +57,26 @@ let len = pages.length;
 for (let i = 0; i < len; i++) {
     navLinks[i].textContent = pages[i];
 }
+
+document.addEventListener("DOMContentLoaded",() => {
+    const cookieBanner = document.getElementById("cookieBanner");
+    const acceptButton = document.getElementById("acceptCookies");
+    const declineButton = document.getElementById("declineCookies");
+
+    if (localStorage.getItem("cookiesAccepted") === "true") {
+        cookieBanner.style.display = "none";
+    }
+
+    if (localStorage.getItem("cookiesAccepted") === "false") {
+        cookieBanner.style.display = "none";
+    }
+
+    acceptButton.addEventListener("click", () => {
+        localStorage.setItem("cookiesAccepted", "true");
+        cookieBanner.style.display = "none";
+    });
+    declineButton.addEventListener("click", () => {
+        localStorage.setItem("cookiesAccepted", "false");
+        cookieBanner.style.display = "none";
+    });
+});
