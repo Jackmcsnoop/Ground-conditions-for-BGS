@@ -57,3 +57,20 @@ let len = pages.length;
 for (let i = 0; i < len; i++) {
     navLinks[i].textContent = pages[i];
 }
+
+document.addEventListener("DOMContentLoaded",() => {
+    const cookieBanner = document.getElementById("cookieBanner");
+    const acceptButton = document.getElementById("acceptCookies");
+    const declineButton = document.getElementById("declineCookies");
+
+    if (!localStorage.getItem("cookiesAccepted")) {
+        cookieBanner.style.display = "flex";
+    }
+    acceptButton.addEventListener("click", () => {
+        localStorage.setItem("cookiesAccepted", "true");
+        cookieBanner.style.display = "none";
+    });
+    declineButton.addEventListener("click", () => {
+        cookieBanner.style.display = "none";
+    });
+});

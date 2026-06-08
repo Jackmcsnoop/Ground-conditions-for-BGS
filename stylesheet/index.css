@@ -10,7 +10,7 @@
     --brown: #8a4203;
     --primary-background: #6d8a66;
     --secondary-background: #c5c1be;
-    --tertiary-background: #0096b0;
+    --tertiary-background: #0c5674;
     --primary-foreground: #f7f7f7;
     --secondary-foreground: #000000;
     --tertiary-foreground: #294d3a;
@@ -453,4 +453,28 @@ a {
     justify-content: center;
     background-color: var(--earth);
     border-radius: 10px;
+}
+
+#cookieBanner {
+    position: fixed;
+    bottom: 0;
+    left: 18.2%;
+    width: 62.1%;
+    background-color: var(--tertiary-background);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#cookieBanner button {
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
 }
