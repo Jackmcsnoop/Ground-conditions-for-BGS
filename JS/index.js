@@ -66,9 +66,11 @@ document.addEventListener("DOMContentLoaded",() => {
     if (localStorage.getItem("cookiesAccepted") === "true") {
         cookieBanner.style.display = "none";
     }
+  
     if (localStorage.getItem("cookiesAccepted") === "false") {
         cookieBanner.style.display = "none";
     }
+
     acceptButton.addEventListener("click", () => {
         localStorage.setItem("cookiesAccepted", "true");
         cookieBanner.style.display = "none";
