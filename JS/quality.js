@@ -44,7 +44,7 @@ const safety2 = `Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit
             Adipiscing elit quisque faucibus ex sapien vitae
             pellentesque.`;
 
-const pages = ["Home", "Resources", "Agriculture", "Quality", "Impacts"];
+const pages = ["Home", "Resources", "Agriculture", "Quality", "Impacts","Feedback"];
 
 //Selecting locations for the information.
 
