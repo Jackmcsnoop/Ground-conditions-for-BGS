@@ -35,7 +35,7 @@ const impacts = `Lorem ipsum dolor sit amet consectetur adipiscing elit.
             vel class aptent taciti sociosqu. Ad litora torquent per
             conubia nostra inceptos himenaeos.`;
 
-const pages = ["Home", "Resources", "Agriculture", "Quality", "Impacts"];
+const pages = ["Home", "Resources", "Agriculture", "Quality", "Impacts","Feedback"];
 
 //Selecting locations for the information.
 
