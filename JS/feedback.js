@@ -1,12 +1,14 @@
-const pages = ["Home", "Resources", "Agriculture", "Quality", "Impacts","Feedback"];
+async function loadJson() {
+    const response = await fetch("./JS/data.json");
+    const data = await response.json()
 
-const navLinks = document.querySelectorAll("#nav-links a");
-
-let len1 = pages.length;
-for (let i = 0; i < len1; i++) {
-    navLinks[i].textContent = pages[i];
+    let len1 = data.index.pages.length
+    for(let i = 0; i < len1; i++) {
+        document.querySelectorAll("#nav-links a")[i].textContent = data.index.pages[i];
+    }
 }
 
+loadJson();
 function handleSubmit(event) {
   event.preventDefault();
 

@@ -1,62 +1,23 @@
-//Text content stored in a JavaScript variable.
-const resources = `Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                Quisque faucibus ex sapien vitae pellentesque sem placerat.
-                In id cursus mi pretium tellus duis convallis. Tempus leo eu
-                aenean sed diam urna tempor. Pulvinar vivamus fringilla
-                lacus nec metus bibendum egestas. Iaculis massa nisl
-                malesuada lacinia integer nunc posuere. Ut hendrerit semper
-                vel class aptent taciti sociosqu. Ad litora torquent per
-                conubia nostra inceptos himenaeos.`;
+async function loadJson() {
+    const response = await fetch("./JS/data.json");
+    const data = await response.json()
 
-const agriculture = `Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                Quisque faucibus ex sapien vitae pellentesque sem placerat.
-                In id cursus mi pretium tellus duis convallis. Tempus leo eu
-                aenean sed diam urna tempor. Pulvinar vivamus fringilla
-                lacus nec metus bibendum egestas. Iaculis massa nisl
-                malesuada lacinia integer nunc posuere. Ut hendrerit semper
-                vel class aptent taciti sociosqu. Ad litora torquent per
-                conubia nostra inceptos himenaeos.`;
+    let len1 = data.index.pages.length
+    for(let i = 0; i < len1; i++) {
+        document.querySelectorAll("#nav-links a")[i].textContent = data.index.pages[i];
+    }
 
-const quality = `Lorem ipsum dolor sit amet consectetur adipiscing elit.
-            Quisque faucibus ex sapien vitae pellentesque sem placerat.
-            In id cursus mi pretium tellus duis convallis. Tempus leo eu
-            aenean sed diam urna tempor. Pulvinar vivamus fringilla
-            lacus nec metus bibendum egestas. Iaculis massa nisl
-            malesuada lacinia integer nunc posuere. Ut hendrerit semper
-            vel class aptent taciti sociosqu. Ad litora torquent per
-            conubia nostra inceptos himenaeos.`;
-
-const impacts = `Lorem ipsum dolor sit amet consectetur adipiscing elit.
-            Quisque faucibus ex sapien vitae pellentesque sem placerat.
-            In id cursus mi pretium tellus duis convallis. Tempus leo eu
-            aenean sed diam urna tempor. Pulvinar vivamus fringilla
-            lacus nec metus bibendum egestas. Iaculis massa nisl
-            malesuada lacinia integer nunc posuere. Ut hendrerit semper
-            vel class aptent taciti sociosqu. Ad litora torquent per
-            conubia nostra inceptos himenaeos.`;
-
-const pages = ["Home", "Resources", "Agriculture", "Quality", "Impacts","Feedback"];
-
-//Selecting locations for the information.
-
-const resourcesP = document.querySelector("#resources p");
-const agricultureP = document.querySelector("#agriculture p");
-const qualityP = document.querySelector("#quality p");
-const impactsP = document.querySelector("#impacts p");
-const navLinks = document.querySelectorAll("#nav-links a");
-
-//Writing the information to the page.
-
-resourcesP.textContent = resources;
-agricultureP.textContent = agriculture;
-qualityP.textContent = quality;
-impactsP.textContent = impacts;
-
-//Looping for efficiency.
-let len = pages.length;
-for (let i = 0; i < len; i++) {
-    navLinks[i].textContent = pages[i];
+    document.querySelector("#resources p").textContent = data.index.resources;
+    document.querySelector("#agriculture p").textContent = data.index.agriculture
+    document.querySelector("#quality p").textContent = data.index.quality
+    document.querySelector("#impacts p").textContent = data.index.impacts
 }
+
+loadJson();
+
+
+
+//Code for cookies
 
 document.addEventListener("DOMContentLoaded",() => {
     const cookieBanner = document.getElementById("cookieBanner");
