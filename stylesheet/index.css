@@ -87,6 +87,7 @@ a {
 
 a:hover {
     font-size: 18px;
+    transition-duration: 1s;
 }
 
 main {
@@ -162,6 +163,8 @@ details {
     width: 100%;
     align-items: center;
     justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 details:hover {
@@ -464,6 +467,8 @@ a {
 #r-dropdowns {
     width: 98%;;
     margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     background-color: #f0f0f0;
     color: var(--black);
 }
@@ -472,7 +477,6 @@ a {
     display: flex;
     justify-content: center;
     background-color: var(--earth);
-    border-radius: 10px;
 }
 
 #cookieBanner {
@@ -506,4 +510,18 @@ form {
     justify-content: center;
     padding: 20px;
     color: var(--black);
+}
+
+form label {
+    display: flex;
+}
+
+form textarea {
+    margin-bottom: 8px;
+    width: 220px;
+}
+
+#name,
+#email {
+    width: 220px;
 }
