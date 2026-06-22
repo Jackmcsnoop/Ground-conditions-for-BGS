@@ -16,6 +16,7 @@ async function loadJson() {
         document.querySelector("#polutants p").textContent = data.agriculture.polutants;
     } catch(err) {
         console.error("Error", err.message);
+        window.location.assign("fallback.html");
     }
 }
 

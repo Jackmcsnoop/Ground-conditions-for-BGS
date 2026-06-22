@@ -14,6 +14,7 @@ async function loadJson() {
         document.querySelector("#impacts p").textContent = data.index.impacts
     } catch(err) {
         console.error("Error", err.message);
+        window.location.assign("fallback.html");
     }
 }
 

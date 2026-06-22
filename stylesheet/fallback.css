@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    padding: 5px;
+    font-size: 4rem;
+}
+h2{
+    padding: 5px;
+    font-size: 2rem;
+}
+#fail-message {
+    width: 600px;
+    height: 400px;
+    border-radius: 15px;
+    background-color: #002E40;
+    color: #ffffff;
+    text-align: center;
+}
