@@ -1,16 +1,20 @@
 async function loadJson() {
-    const response = await fetch("./JS/data.json");
-    const data = await response.json()
+    try{
+        const response = await fetch("./JS/data.json");
+        const data = await response.json()
 
-    let len1 = data.index.pages.length
-    for(let i = 0; i < len1; i++) {
-        document.querySelectorAll("#nav-links a")[i].textContent = data.index.pages[i];
+        let len1 = data.index.pages.length
+        for(let i = 0; i < len1; i++) {
+            document.querySelectorAll("#nav-links a")[i].textContent = data.index.pages[i];
+        }
+
+        document.querySelector("#resources p").textContent = data.index.resources;
+        document.querySelector("#agriculture p").textContent = data.index.agriculture
+        document.querySelector("#quality p").textContent = data.index.quality
+        document.querySelector("#impacts p").textContent = data.index.impacts
+    } catch(err) {
+        console.error("Error", err.message);
     }
-
-    document.querySelector("#resources p").textContent = data.index.resources;
-    document.querySelector("#agriculture p").textContent = data.index.agriculture
-    document.querySelector("#quality p").textContent = data.index.quality
-    document.querySelector("#impacts p").textContent = data.index.impacts
 }
 
 loadJson();
