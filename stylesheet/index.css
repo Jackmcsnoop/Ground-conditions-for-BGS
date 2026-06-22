@@ -32,37 +32,23 @@
     width: 140px;
     height: auto;
     padding: 30px;
-    margin-right: 20%;
     margin-left: 20%;
-}
-
-nav > a {
-    display: none;
-}
-
-nav{
-    border: none;
-}
-#nav-links{
-    display: none;
-    flex-direction: column;
-}
-nav input[type='checkbox']:checked ~ #nav-links {
-    display: flex;
-    padding: 2px;
-    border: solid;
-    width: 70%;
-}
-label {
-    font-size: 2rem;
-    text-align: right;
-    display: block;
-    padding: 0.5em;
-    line-height: 1.6em;
-    align-self: center;
-    margin-left: 33%;
     margin-right: 20%;
-    cursor: pointer;
+}
+
+h1 {
+    margin-left: 6%;
+    margin-right: 56%;
+}
+
+#header {
+    text-align: center;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 body{
@@ -71,6 +57,10 @@ body{
 
 main {
     font-family: "Aileron", sans-serif;
+}
+
+label {
+    display: none;
 }
 
 #header {
@@ -100,7 +90,6 @@ a:hover {
 }
 
 main {
-    width: 800px;
     margin: 0 auto;
     background-color: #f0f0f0;
     box-sizing: border-box;
@@ -115,7 +104,9 @@ p {
 }
 
 h2 {
-    padding: 10px;
+    font-size: 1.5rem;
+    padding: 5px;
+    margin-left: 8px;
 }
 
 h3 {
@@ -254,71 +245,39 @@ nav input[type='checkbox']:checked ~ a {
     }
 }
 
-@media (max-width: 740px) {
-    label {
-        margin-left: 18%;
-        margin-right: 25%;
-    }
-
+@media (max-width: 1300px) {
     #logo {
-        margin-right: 9%;
-        margin-left: 15%;
-    }
-}
-
-@media (max-width: 650px) {
-    label {
-        margin-left: 15%;
-        margin-right: 30%;
-    }
-
-    #logo {
-        margin-right: 5%;
-        margin-left: 18%;
-    }
-}
-
-@media (max-width: 570px) {
-    label {
-        margin-left: 15%;
-        margin-right: 30%;
-    }
-
-    #logo {
-        margin-right: 2%;
+        margin-right: 15%;
         margin-left: 20%;
     }
 }
 
-@media (max-width: 525px) {
+@media (max-width: 1000px) {
     label {
-        margin-left: 10%;
-        margin-right: 60%;
+        margin-left: 28%;
+        margin-right: 35%;
+    }
+
+    #logo {
+        margin-right: 10%;
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 800px) {
+    label {
+        margin-left: -40%;
+        margin-right: 5%;
     }
 
     #logo {
         margin-right: 0%;
-        margin-left: 50%;
+        margin-left: 0%;
     }
-}
-
-@media (max-width: 520px) {
     nav > a {
         display: none;
     }
-    p {
-        font-size: 20px;
-        padding: 5px;
-    }
-    a {
-        font-size: 1.5rem;
-    }
-    h1 {
-        font-size: 2rem;
-    }
-    h2 {
-        font-size: 1.8rem;
-    }
+
     nav{
         border: none;
     }
@@ -332,20 +291,82 @@ nav input[type='checkbox']:checked ~ a {
         border: solid;
         width: 70%;
     }
-    nav label {
+    label {
         font-size: 2rem;
         text-align: right;
         display: block;
         padding: 0.5em;
         line-height: 1.6em;
         align-self: center;
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 650px) {
+    label {
+        margin-left: -40%;
+        margin-right: 10%;
+    }
+
+    #logo {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+}
+
+@media (max-width: 570px) {
+    label {
+        margin-left: -45%;
+        margin-right: 10%;
+    }
+
+    #logo {
+        margin-right: -5%;
+        margin-left: 0%;
+    }
+}
+
+@media (max-width: 525px) {
+    label {
+        margin-left: -50%;
+        margin-right: 8%;
+    }
+
+    #logo {
+        margin-right: -5%;
+        margin-left: 0%;
+    }
+}
+
+@media (max-width: 520px) {
+    p {
+        font-size: 20px;
+        padding: 5px;
+    }
+    a {
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    label {
+        margin-left: -50%;
+        margin-right: 5%;
+    }
+    #logo {
+        margin-right: -10%;
+        margin-left: -8%;
     }
 }
 
 @media (max-width: 480px) {
     label {
-        margin-left: 10%;
-        margin-right: 70%;
+        margin-left: -50%;
+        margin-right: 5%;
     }
 
     #logo{
@@ -356,20 +377,20 @@ nav input[type='checkbox']:checked ~ a {
         width: 65px;
         height: auto;
         padding: 30px;
-        margin-right: 8%;
-        margin-left: 60%;
+        margin-right: 0%;
+        margin-left: -8%;
     }
 }
 
 @media (max-width: 430px) {
     label {
-        margin-left: 8%;
-        margin-right: 75%;
+        margin-left: -50%;
+        margin-right: 8%;
     }
 
     #smallLogo {
-        margin-right: 5%;
-        margin-left: 65%;
+        margin-right: -5%;
+        margin-left: 0%;
     }
 }
 
@@ -383,38 +404,38 @@ a {
 
 @media (max-width: 400px) {
     label {
-        margin-left: 0%;
-        margin-right: 80%;
+        margin-left: -48%;
+        margin-right: 12%;
     }
 
     #smallLogo {
-        margin-right: 0%;
-        margin-left: 70%;
+        margin-right: -5%;
+        margin-left: 5%;
     }
 }
 
 @media (max-width: 375px) {
     label {
-        margin-left: 5%;
-        margin-right: 90%;
+        margin-left: -48%;
+        margin-right: 12%;
     }
 
     #smallLogo {
         width: 50px;
-        margin-right: 0%;
-        margin-left: 80%;
+        margin-right: -5%;
+        margin-left: 5%;
     }
 }
 
 @media (max-width: 360px) {
     label {
-        margin-left: 0%;
-        margin-right: 90%;
+        margin-left: -48%;
+        margin-right: 12%;
     }
 
     #smallLogo {
-        margin-right: 0%;
-        margin-left: 80%;
+        margin-right: -5%;
+        margin-left: 5%;
     }
 }
 
