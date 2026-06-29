@@ -83,18 +83,19 @@ nav {
 
 a {
     padding: 15px;
+    text-decoration: none;
 }
 
 a:hover {
-    font-size: 18px;
-    transition-duration: 1s;
+    text-decoration: underline;
+    transition-duration: 4s;
 }
 
 main {
     margin: 0 auto;
     background-color: #f0f0f0;
     box-sizing: border-box;
-    border-radius: 15px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 p {
@@ -133,7 +134,7 @@ summary {
     font-weight: bold;
     background: #eee;
     cursor: pointer;
-}
+} 
 
 summary::-webkit-details-marker {
     display: none;
@@ -235,211 +236,7 @@ nav input[type='checkbox']:checked ~ a {
     position: sticky;
     top: 0;
     background-color: var(--earth);
-    border-radius: 15px;
-}
-
-@media (max-width: 800px) {
-    p {
-        font-size: 18px;
-    }
-    main {
-        width: 100%;
-        padding: 0px;
-    }
-}
-
-@media (max-width: 1300px) {
-    #logo {
-        margin-right: 15%;
-        margin-left: 20%;
-    }
-}
-
-@media (max-width: 1000px) {
-    label {
-        margin-left: 28%;
-        margin-right: 35%;
-    }
-
-    #logo {
-        margin-right: 10%;
-        margin-left: 20%;
-    }
-}
-
-@media (max-width: 800px) {
-    label {
-        margin-left: -40%;
-        margin-right: 5%;
-    }
-
-    #logo {
-        margin-right: 0%;
-        margin-left: 0%;
-    }
-    nav > a {
-        display: none;
-    }
-
-    nav{
-        border: none;
-    }
-    #nav-links{
-        display: none;
-        flex-direction: column;
-    }
-    nav input[type='checkbox']:checked ~ #nav-links {
-        display: flex;
-        padding: 2px;
-        border: solid;
-        width: 70%;
-    }
-    label {
-        font-size: 2rem;
-        text-align: right;
-        display: block;
-        padding: 0.5em;
-        line-height: 1.6em;
-        align-self: center;
-        cursor: pointer;
-    }
-
-}
-
-@media (max-width: 650px) {
-    label {
-        margin-left: -40%;
-        margin-right: 10%;
-    }
-
-    #logo {
-        margin-right: 0%;
-        margin-left: 0%;
-    }
-}
-
-@media (max-width: 570px) {
-    label {
-        margin-left: -45%;
-        margin-right: 10%;
-    }
-
-    #logo {
-        margin-right: -5%;
-        margin-left: 0%;
-    }
-}
-
-@media (max-width: 525px) {
-    label {
-        margin-left: -50%;
-        margin-right: 8%;
-    }
-
-    #logo {
-        margin-right: -5%;
-        margin-left: 0%;
-    }
-}
-
-@media (max-width: 520px) {
-    p {
-        font-size: 20px;
-        padding: 5px;
-    }
-    a {
-        font-size: 1.5rem;
-    }
-    h1 {
-        font-size: 2rem;
-    }
-    h2 {
-        font-size: 1.8rem;
-    }
-    label {
-        margin-left: -50%;
-        margin-right: 5%;
-    }
-    #logo {
-        margin-right: -10%;
-        margin-left: -8%;
-    }
-}
-
-@media (max-width: 480px) {
-    label {
-        margin-left: -50%;
-        margin-right: 5%;
-    }
-
-    #logo{
-        display: none;
-    }
-    #smallLogo {
-        display: flex;
-        width: 65px;
-        height: auto;
-        padding: 30px;
-        margin-right: 0%;
-        margin-left: -8%;
-    }
-}
-
-@media (max-width: 430px) {
-    label {
-        margin-left: -50%;
-        margin-right: 8%;
-    }
-
-    #smallLogo {
-        margin-right: -5%;
-        margin-left: 0%;
-    }
-}
-
-main{
-    color: var(--white);
-}
-
-a {
-    color: var(--white);
-}
-
-@media (max-width: 400px) {
-    label {
-        margin-left: -48%;
-        margin-right: 12%;
-    }
-
-    #smallLogo {
-        margin-right: -5%;
-        margin-left: 5%;
-    }
-}
-
-@media (max-width: 375px) {
-    label {
-        margin-left: -48%;
-        margin-right: 12%;
-    }
-
-    #smallLogo {
-        width: 50px;
-        margin-right: -5%;
-        margin-left: 5%;
-    }
-}
-
-@media (max-width: 360px) {
-    label {
-        margin-left: -48%;
-        margin-right: 12%;
-    }
-
-    #smallLogo {
-        margin-right: -5%;
-        margin-left: 5%;
-    }
+    border-radius: 15px 15px 0px 0px;
 }
 
 main{
@@ -503,13 +300,17 @@ a {
     border-radius: 5px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    color: var(--black);
+main{
+    min-height: 88vh;
+}
+
+footer{
+    color: var(--primary-foreground);
+    font-family: "Aileron", sans-serif;
+}
+
+#footer{
+    border-radius: 0px 0px 15px 15px;
 }
 
 form label {
@@ -517,11 +318,286 @@ form label {
 }
 
 form textarea {
+    display: block;
     margin-bottom: 8px;
     width: 220px;
 }
 
-#name,
+#name{
+    width: 150px;
+}
 #email {
     width: 220px;
+}
+
+#feedback{
+    width: 550px;
+    height: 150px;
+}
+
+#form-section1{
+    display: flex;
+    gap: 20px;
+}
+
+#form-section2{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+input[type="submit"] {
+    width: 100px;
+    height: 40px;
+    font-size: large;
+}
+
+#form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--black);
+    padding: 20px;
+    border-style: solid;
+    border-radius: 15px;
+    width: 680px;
+}
+
+form label{
+    font-size: larger;
+}
+
+@media (max-width: 800px) {
+    p {
+        font-size: 18px;
+    }
+    main {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 1300px) {
+    #logo {
+        margin-right: 15%;
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 1000px) {
+    label {
+        margin-left: 28%;
+        margin-right: 35%;
+    }
+
+    #logo {
+        margin-right: 10%;
+        margin-left: 20%;
+    }
+
+    #form-section1{
+        flex-direction: column;
+    }
+    #name{
+        min-width: 220px;
+    }
+}
+
+@media (max-width: 800px) {
+    label {
+        margin-left: -40%;
+        margin-right: 5%;
+    }
+
+    #logo {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    nav > a {
+        display: none;
+    }
+
+    nav{
+        position: relative;
+        border: none;
+    }
+    #nav-links{
+        position: absolute;
+        top: 100%;
+        left: 15%;
+        width: 100%;
+        z-index: 1000;
+        background-color: var(--earth);
+        display: none;
+        flex-direction: column;
+    }
+    nav input[type='checkbox']:checked ~ #nav-links {
+        display: flex;
+        padding: 2px;
+        border: solid;
+        width: 70%;
+    }
+    label {
+        font-size: 2rem;
+        text-align: right;
+        display: block;
+        padding: 0.5em;
+        line-height: 1.6em;
+        align-self: center;
+        cursor: pointer;
+    }
+
+    #feedback{
+        max-width: 400px;
+    }
+    form{
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 650px) {
+    label {
+        margin-left: -40%;
+        margin-right: 10%;
+    }
+
+    #logo {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
+    #feedback{
+        max-width: 220px;
+        min-height: 220px;
+    }
+    
+    form{
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 570px) {
+    label {
+        margin-left: -45%;
+        margin-right: 10%;
+    }
+
+    #logo {
+        margin-right: -5%;
+        margin-left: 0%;
+    }
+}
+
+@media (max-width: 525px) {
+    label {
+        margin-left: -50%;
+        margin-right: 8%;
+    }
+
+    #logo {
+        margin-right: -5%;
+        margin-left: 0%;
+    }
+}
+
+@media (max-width: 520px) {
+    p {
+        font-size: 20px;
+        padding: 5px;
+    }
+    a {
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    label {
+        margin-left: -50%;
+        margin-right: 5%;
+    }
+    #logo {
+        margin-right: -5%;
+        margin-left: -0%;
+    }
+}
+
+@media (max-width: 480px) {
+    label {
+        margin-left: -50%;
+        margin-right: 5%;
+    }
+
+    #logo{
+        display: none;
+    }
+    #smallLogo {
+        display: flex;
+        width: 65px;
+        height: auto;
+        padding: 30px;
+        margin-right: 0%;
+        margin-left: -8%;
+    }
+}
+
+@media (max-width: 430px) {
+    label {
+        margin-left: -50%;
+        margin-right: 8%;
+    }
+
+    #smallLogo {
+        margin-right: -5%;
+        margin-left: 0%;
+    }
+}
+
+@media (max-width: 400px) {
+    label {
+        margin-left: -48%;
+        margin-right: 12%;
+    }
+
+    #smallLogo {
+        margin-right: -5%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 375px) {
+    label {
+        margin-left: -48%;
+        margin-right: 12%;
+    }
+
+    #smallLogo {
+        width: 50px;
+        margin-right: -5%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 360px) {
+    label {
+        margin-left: -48%;
+        margin-right: 12%;
+    }
+
+    #smallLogo {
+        margin-right: -5%;
+        margin-left: 5%;
+    }
 }

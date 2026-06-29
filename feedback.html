@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="stylesheet/index.css" />
         <title>Ground Conditions</title>
     </head>
@@ -10,15 +10,21 @@
         <main>
             <div id="scrollfollow">
                 <div id="header">
-                    <img id="smallLogo" src="images/bgsLogoCompact.png" alt="The BGSLogo" />
-                    <img id="logo" src="images/bgsLogo.jpeg" alt="The BGSLogo" />
+                    <img
+                        id="smallLogo"
+                        src="images/bgsLogoCompact.png"
+                        alt="The BGSLogo"
+                    />
+                    <img
+                        id="logo"
+                        src="images/bgsLogo.jpeg"
+                        alt="The BGSLogo"
+                    />
                     <h1>Feedback</h1>
-                    <label for='menu' tabindex="0">
-                        ☰
-                    </label>
+                    <label for="menu" tabindex="0"> ☰ </label>
                 </div>
                 <nav>
-                    <input id='menu' type='checkbox' />
+                    <input id="menu" type="checkbox" />
                     <div id="nav-links">
                         <a href="index.html"></a>
                         <a href="resources.html"></a>
@@ -29,24 +35,32 @@
                     </div>
                 </nav>
             </div>
-            <form action="submit_feedback.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="feedback">Feedback:</label>
-                <textarea id="feedback" name="feedback" required></textarea>
-                <input type="submit" value="Submit">
-            </form>
-            <div id="footer">
-                <footer>
-                    <p>
-                        &copy; BGS | <a href="">Contact Us</a>
-                        <a href="">More Info</a>
-                    </p>
-                </footer>
+            <div id="form">
+                <form action="submit_feedback.php" method="post">
+                    <div id="form-section1">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required />
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div id="form-section2">
+                        <label for="feedback">Feedback:</label>
+                        <textarea id="feedback" name="feedback" required></textarea>
+                    </div>
+                    <div id="submit">
+                        <input type="submit" value="Send" />
+                    </div>
+                </form>
             </div>
         </main>
+        <div id="footer">
+            <footer>
+                <p>
+                    &copy; BGS | <a href="">Contact Us</a>
+                    <a href="">More Info</a>
+                </p>
+            </footer>
+        </div>
         <script src="JS/feedback.js"></script>
     </body>
 </html>
