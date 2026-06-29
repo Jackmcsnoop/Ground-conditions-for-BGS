@@ -21,7 +21,6 @@ async function loadJson() {
 loadJson();
 
 
-
 //Code for cookies
 
 document.addEventListener("DOMContentLoaded",() => {
@@ -46,3 +45,7 @@ document.addEventListener("DOMContentLoaded",() => {
         cookieBanner.style.display = "none";
     });
 });
+
+async function openAdmin() {
+    
+}

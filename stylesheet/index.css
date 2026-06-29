@@ -247,6 +247,12 @@ a {
     color: var(--white);
 }
 
+#c-main {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    width: 100%;
+}
+
 #r-overview,
 #a-overview,
 #q-overview,
@@ -261,7 +267,8 @@ a {
 #safety-1,
 #safety-2,
 #solutions,
-#r-dropdowns {
+#r-dropdowns,
+#c-main {
     width: 98%;;
     margin: 0 auto;
     margin-top: 10px;
@@ -375,6 +382,10 @@ form{
 
 form label{
     font-size: larger;
+}
+
+#login {
+    display: none;
 }
 
 @media (max-width: 800px) {

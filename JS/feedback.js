@@ -14,6 +14,8 @@ async function loadJson() {
 }
 
 loadJson();
+
+//Send an email upon submiting the information
 function handleSubmit(event) {
   event.preventDefault();
 
