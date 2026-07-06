@@ -83,18 +83,19 @@ nav {
 
 a {
     padding: 15px;
+    text-decoration: none;
 }
 
 a:hover {
-    font-size: 18px;
-    transition-duration: 1s;
+    text-decoration: underline;
+    transition-duration: 4s;
 }
 
 main {
     margin: 0 auto;
     background-color: #f0f0f0;
     box-sizing: border-box;
-    border-radius: 15px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 p {
@@ -133,7 +134,7 @@ summary {
     font-weight: bold;
     background: #eee;
     cursor: pointer;
-}
+} 
 
 summary::-webkit-details-marker {
     display: none;
@@ -174,7 +175,8 @@ details:hover {
 #r-overview,
 #a-overview,
 #q-overview,
-#i-overview {
+#i-overview,
+#admin-overview {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     width: 100%;
@@ -235,7 +237,157 @@ nav input[type='checkbox']:checked ~ a {
     position: sticky;
     top: 0;
     background-color: var(--earth);
+    border-radius: 15px 15px 0px 0px;
+}
+
+main{
+    color: var(--white);
+}
+
+a {
+    color: var(--white);
+}
+
+#c-main {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
+    width: 100%;
+}
+
+#r-overview,
+#a-overview,
+#q-overview,
+#i-overview,
+#resources,
+#agriculture,
+#quality,
+#impacts,
+#polutants,
+#building,
+#mining,
+#safety-1,
+#safety-2,
+#solutions,
+#r-dropdowns,
+#c-main,
+#admin-overview {
+    width: 98%;;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    color: var(--black);
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--earth);
+}
+
+#cookieBanner {
+    position: fixed;
+    bottom: 0;
+    left: 18.2%;
+    width: 62.1%;
+    background-color: var(--tertiary-background);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#cookieBanner button {
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+main{
+    min-height: 88vh;
+}
+
+footer{
+    color: var(--primary-foreground);
+    font-family: "Aileron", sans-serif;
+}
+
+#footer{
+    border-radius: 0px 0px 15px 15px;
+}
+
+form label {
+    display: flex;
+}
+
+form textarea {
+    display: block;
+    margin-bottom: 8px;
+    width: 220px;
+}
+
+#name{
+    width: 150px;
+}
+#email {
+    width: 220px;
+}
+
+#feedback{
+    width: 550px;
+    height: 150px;
+}
+
+#form-section1{
+    display: flex;
+    gap: 20px;
+}
+
+#form-section2{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+input[type="submit"] {
+    width: 100px;
+    height: 40px;
+    font-size: large;
+}
+
+#form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--black);
+    padding: 20px;
+    border-style: solid;
+    border-radius: 15px;
+    width: 680px;
+}
+
+form label{
+    font-size: larger;
+}
+
+#login {
+    display: none;
 }
 
 @media (max-width: 800px) {
@@ -265,6 +417,13 @@ nav input[type='checkbox']:checked ~ a {
         margin-right: 10%;
         margin-left: 20%;
     }
+
+    #form-section1{
+        flex-direction: column;
+    }
+    #name{
+        min-width: 220px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -282,9 +441,16 @@ nav input[type='checkbox']:checked ~ a {
     }
 
     nav{
+        position: relative;
         border: none;
     }
     #nav-links{
+        position: absolute;
+        top: 100%;
+        left: 15%;
+        width: 100%;
+        z-index: 1000;
+        background-color: var(--earth);
         display: none;
         flex-direction: column;
     }
@@ -304,6 +470,12 @@ nav input[type='checkbox']:checked ~ a {
         cursor: pointer;
     }
 
+    #feedback{
+        max-width: 400px;
+    }
+    form{
+        max-width: 500px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -315,6 +487,15 @@ nav input[type='checkbox']:checked ~ a {
     #logo {
         margin-right: 0%;
         margin-left: 0%;
+    }
+
+    #feedback{
+        max-width: 220px;
+        min-height: 220px;
+    }
+    
+    form{
+        max-width: 300px;
     }
 }
 
@@ -361,8 +542,8 @@ nav input[type='checkbox']:checked ~ a {
         margin-right: 5%;
     }
     #logo {
-        margin-right: -10%;
-        margin-left: -8%;
+        margin-right: -5%;
+        margin-left: -0%;
     }
 }
 
@@ -395,14 +576,6 @@ nav input[type='checkbox']:checked ~ a {
         margin-right: -5%;
         margin-left: 0%;
     }
-}
-
-main{
-    color: var(--white);
-}
-
-a {
-    color: var(--white);
 }
 
 @media (max-width: 400px) {
@@ -440,88 +613,4 @@ a {
         margin-right: -5%;
         margin-left: 5%;
     }
-}
-
-main{
-    color: var(--white);
-}
-
-a {
-    color: var(--white);
-}
-
-#r-overview,
-#a-overview,
-#q-overview,
-#i-overview,
-#resources,
-#agriculture,
-#quality,
-#impacts,
-#polutants,
-#building,
-#mining,
-#safety-1,
-#safety-2,
-#solutions,
-#r-dropdowns {
-    width: 98%;;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: #f0f0f0;
-    color: var(--black);
-}
-
-#footer {
-    display: flex;
-    justify-content: center;
-    background-color: var(--earth);
-}
-
-#cookieBanner {
-    position: fixed;
-    bottom: 0;
-    left: 18.2%;
-    width: 62.1%;
-    background-color: var(--tertiary-background);
-    color: var(--white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
-}
-
-#cookieBanner button {
-    background-color: var(--blue);
-    color: var(--white);
-    border: none;
-    padding: 10px 20px;
-    margin-left: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    color: var(--black);
-}
-
-form label {
-    display: flex;
-}
-
-form textarea {
-    margin-bottom: 8px;
-    width: 220px;
-}
-
-#name,
-#email {
-    width: 220px;
 }
