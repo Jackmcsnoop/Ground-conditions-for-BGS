@@ -175,7 +175,8 @@ details:hover {
 #r-overview,
 #a-overview,
 #q-overview,
-#i-overview {
+#i-overview,
+#admin-overview {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     width: 100%;
@@ -268,7 +269,8 @@ a {
 #safety-2,
 #solutions,
 #r-dropdowns,
-#c-main {
+#c-main,
+#admin-overview {
     width: 98%;;
     margin: 0 auto;
     margin-top: 10px;
