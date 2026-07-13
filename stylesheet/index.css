@@ -390,6 +390,23 @@ form label{
     display: none;
 }
 
+#map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 10px auto;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 98%;
+}
+
+iframe {
+    margin: 20px 20px;
+}
+
 @media (max-width: 800px) {
     p {
         font-size: 18px;
@@ -530,6 +547,9 @@ form label{
     }
     a {
         font-size: 1.5rem;
+    }
+    footer a{
+        font-size: 0.8rem;
     }
     h1 {
         font-size: 2rem;
